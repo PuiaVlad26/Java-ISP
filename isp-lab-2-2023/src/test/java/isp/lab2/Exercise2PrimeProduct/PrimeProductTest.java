@@ -1,0 +1,18 @@
+package isp.lab2.Exercise2PrimeProduct;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class PrimeProductTest {
+
+    @Test
+    public void testPrimeProduct() {
+        int n = 10;
+        int m = 20;
+        long expected = 46189L;
+        Exercise2PrimeProduct Exercise2PrimeProduct = new Exercise2PrimeProduct();
+        long actual = Exercise2PrimeProduct.getPrimeProduct(n);
+        assertEquals(expected, actual);
+    }
+}
